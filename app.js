@@ -13,6 +13,7 @@ var menu = require('./routes/menu');
 var newEntry = require('./routes/newEntry');
 var setting = require('./routes/setting');
 var question = require('./routes/question');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -39,12 +40,13 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/menu', menu.view);
 app.get('/newEntry', newEntry.view);
 app.get('/settings', setting.view);
 app.get('/question', question.view);
+app.get('/login', login.view);
 // Example route
 // app.get('/users', user.list);
 
