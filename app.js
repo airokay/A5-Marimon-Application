@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var menu = require('./routes/menu');
 var newEntry = require('./routes/newEntry');
 var setting = require('./routes/setting');
+var question = require('./routes/question');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +44,7 @@ app.get('/index', index.view);
 app.get('/menu', menu.view);
 app.get('/newEntry', newEntry.view);
 app.get('/settings', setting.view);
+app.get('/question', question.view);
 // Example route
 // app.get('/users', user.list);
 
