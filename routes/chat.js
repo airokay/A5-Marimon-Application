@@ -14,5 +14,6 @@ exports.addChat = function(req, res) {
 
 	chat.messages.push(newChat);
 	res.redirect('/');
-  	//res.json(chat);
+  	res.json(chat);
+  	res.render('newEntry', chat)
 }
