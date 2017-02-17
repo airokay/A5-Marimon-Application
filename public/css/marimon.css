@@ -32,6 +32,8 @@
 }
 
 .record{
+	position:absolute;
+	height: auto;
 	margin: auto;
 	text-align: center;
 }
