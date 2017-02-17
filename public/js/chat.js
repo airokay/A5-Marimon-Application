@@ -17,7 +17,7 @@ $("#sendBtn").click(function(event) {
   				'<div class="answer chat"> '+
   					'<img src="images/Marimon face.png" style= "display:none"> ' +
        				'<span>' + input +' </span> ' +
-       				'<img src=' + pic  + ' style= "img-responsive col-sm-12"> ' +
+       				'<img src=' + pic  + ' style="width:32px; height:32px"> ' +
        			'</div> ' +
   			'</div>'; 
 		$('#messagecontainer').append(htmlElement);
