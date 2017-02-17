@@ -8,13 +8,6 @@ exports.view = function(req, res){
   res.render('newEntry', chat);
 };
 
-function projectClick(e){
-	e.preventDefault();
-} 
-
-function initializePage() {
-	$('#sendBtn').click(sendMessage);
-}
 
 exports.addChat = function(req, res) {
 	var message = req.query.message;
@@ -32,6 +25,11 @@ exports.addChat = function(req, res) {
 //  	res.json(chat);
   //	res.render('newEntry', chat)
 }
+
+function projectClick(e){
+	e.preventDefault();
+} 
+
 
 function sendMessage(e){
 	e.preventDefault();

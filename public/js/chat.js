@@ -1,3 +1,24 @@
+$(document).ready(function(){
+	initializePage();
+});
+
+function initializePage() {
+	
+$("#sendBtn").click(function(event) {
+		event.preventDefault();
+		var input = $('#inputMessage').val();
+		var htmlElement = '<div class = "chatbox" > ' +
+  				'<div class="answer chat"> '+
+  					'<img src="images/Marimon face.png" style= "display:none"> ' +
+       				'<span>' + input +' </span> ' +
+       			'</div> ' +
+  			'</div>';
+		$('#messagecontainer').append(htmlElement);
+	});
+}
+
+
+
 /*var chat = require('../chat.json');
 
 exports.addChat = function(req, res) {
