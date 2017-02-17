@@ -6,9 +6,25 @@
 	float:right;
 }
 
-.answer{
+#messagecontainer{
+	overflow: scroll;
+	height: 80%;
+}
+
+
+/*.answer{
 	float: right;
 	padding-right: 44px;
+} */
+
+.answer span {
+ 	float: right;
+ 	padding-right: 44px;
+}
+
+.chatbox {
+ 	display: block;
+ 	height: 80px;
 }
 
 .chat{

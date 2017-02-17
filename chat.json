@@ -11,12 +11,12 @@
 			"style": "display:none"
 		},
 		{
-			"message": "How are you feeling today?",
+			"message": "What did you eat today?",
 			"type": "question",
 			"style": "width:80px; height:80px"
 		},
 		{
-			"message": "I'm feeling Great",
+			"message": "I ate an ugly disgusting Marimon",
 			"type": "answer",
 			"style": "display:none"
 		}
