@@ -14,7 +14,9 @@ var newEntry = require('./routes/newEntry');
 var setting = require('./routes/setting');
 var question = require('./routes/question');
 var login = require('./routes/login');
-// Example route
+var chat = require('./routes/chat');
+
+//  route
 // var user = require('./routes/user');
 
 var app = express();
@@ -47,6 +49,9 @@ app.get('/newEntry', newEntry.view);
 app.get('/settings', setting.view);
 app.get('/question', question.view);
 app.get('/login', login.view);
+app.get('/chat', chat.addChat);
+
+
 // Example route
 // app.get('/users', user.list);
 

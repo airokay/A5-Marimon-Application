@@ -1,0 +1,9 @@
+{
+	"messages": [
+		{
+			"message": "How are you feeling today?",
+			"type": "question",
+			"icon": "images/Marimon face.png"
+		}
+	]
+}
