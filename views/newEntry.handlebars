@@ -15,35 +15,39 @@
 	<body style="background-color:#E6F3CA" >
 
 		<div class="container">
+			<div style = "position:center" >
+				<a href="/index">
+					<img src="images/back button.png" class="back">
+				</a>
 
-			<a href="/index">
-				<img src="images/back button.png" class="back">
-			</a>
-			<span class="date">1/25/2017</span>
-			<a href="/menu">
-				<img src="images/Hamburger menu.png" class="hamburger">
-			</a>
+				<span class="date">1/25/2017</span>
+
+				<a href="/menu">
+					<img src="images/Hamburger menu.png" class="hamburger">
+				</a>
+			</div>
 		
 
-       		<div class="chat">
+<!--       		<div class="chat">
        			<img src="images/Marimon face.png" style="width:80px; height:80px">
-       			<span style="font-size:150%;"> How are you feeling today? </span>
+       			<span > How are you feeling today? </span>
        		</div>
 
-       		<div class="chat">
+       		<div class="chat answer">
        			<span> I'm feeling great</span>
-       		</div>
+       		</div> -->
 
 
   			{{#each messages}}
   			<div class = "chatbox" >
-       			<img src="{{icon}}" style="width:80px; height:80px">
   				<div class="{{type}} chat">
+  					<img src="images/Marimon face.png" style= {{style}}>
        				<span> {{message}} </span>
        			</div>
   			</div>
   			{{/each}}
 			
+
 		<div>
 			<a href = "/question">
 				<img src = "images/Plus.png" class="plus-entry">
