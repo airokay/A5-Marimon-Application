@@ -9,6 +9,16 @@
 			"message": "I'm feeling Great",
 			"type": "answer",
 			"style": "display:none"
+		},
+		{
+			"message": "How are you feeling today?",
+			"type": "question",
+			"style": "width:80px; height:80px"
+		},
+		{
+			"message": "I'm feeling Great",
+			"type": "answer",
+			"style": "display:none"
 		}
 	]
 }
