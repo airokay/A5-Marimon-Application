@@ -9,23 +9,22 @@
 		<link href="css/bootstrap-theme.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet"> 
 		<link href="css/marimon.css" rel="stylesheet">	
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	
-		
 
 	</head>
 	
-	<body style="margin:10; padding:0; background-color:#E6F3CA" >
+	<body style="background-color:#E6F3CA" >
 
 		<div class="container">
 
 			<a href="/index">
-				<img src="images/back button.png">
+				<img src="images/back button.png" class="back">
 			</a>
+			<span class="date">1/25/2017</span>
 			<a href="/menu">
-				<img src="images/Hamburger menu.png" style="float:right">
+				<img src="images/Hamburger menu.png" class="hamburger">
 			</a>
 		
+
 			<div align="center">
 				<a href="#">
           			<span id="leftMonth" class="glyphicon glyphicon-menu-left"></span>
@@ -38,10 +37,12 @@
         		</a>
        		</div>
 
+
        		<div class="question chat">
        			<img src="images/Marimon face.png" style="width:80px; height:80px">
        			<span> How are you feeling today? </span>
        		</div>
+
 
        		<div class="answer chat">
        			<span> I'm feeling great</span>
@@ -59,14 +60,21 @@
 
 			
 			<a href = "/question">
-				<img src = "images/Plus.png" style="position: absolute; right: 10px; bottom:44px; margin:10;">
+				<img src = "images/Plus.png" class="plus-entry">
 			</a>
+			</div>
+
 
        		<div class="input-group responsive" style= "position: absolute; min-width: 400px; max-width: 80%; bottom: 5px; padding-left: 44px;">
        			<input type="text" class="form-control" placeholder="Type your entry...">
        			<span class="input-group-btn" >
     				<button class="btn" type="button">Send</button>
     			</span>
+			<div class="entry">
+				<button class="btn" type="button"style="float:right">Send</button>
+				<div style="overflow: hidden; padding-right: .5em;">
+   					<input type="text" class="form-control" placeholder="Type your entry..."/>
+				</div>​
   			</div>
 
 
