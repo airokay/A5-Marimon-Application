@@ -2,6 +2,10 @@
 	font-family: 'Barrio', cursive;
 }
 
+.menu {
+	float:right;
+}
+
 .answer{
 	float: right;
 	padding-right: 44px;
