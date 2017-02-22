@@ -15,6 +15,8 @@ var setting = require('./routes/setting');
 var question = require('./routes/question');
 var login = require('./routes/login');
 var chat = require('./routes/chat');
+var pastEntry1 = require('./routes/pastEntry1');
+var pastEntry2 = require('./routes/pastEntry2');
 
 //  route
 // var user = require('./routes/user');
@@ -50,6 +52,8 @@ app.get('/settings', setting.view);
 app.get('/question', question.view);
 app.get('/login', login.view);
 app.get('/chat', chat.addChat);
+app.get('/pastEntry1', pastEntry1.view);
+app.get('/pastEntry2', pastEntry2.view);
 
 
 
