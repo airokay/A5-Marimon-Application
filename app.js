@@ -17,6 +17,7 @@ var login = require('./routes/login');
 var chat = require('./routes/chat');
 var pastEntry1 = require('./routes/pastEntry1');
 var pastEntry2 = require('./routes/pastEntry2');
+var information = require('./routes/information');
 
 
 
@@ -56,6 +57,7 @@ app.get('/login', login.view);
 app.get('/chat', chat.addChat);
 app.get('/pastEntry1', pastEntry1.view);
 app.get('/pastEntry2', pastEntry2.view);
+app.get('/information', information.view);
 
 app.post('/addMessage', newEntry.addMessage);
 

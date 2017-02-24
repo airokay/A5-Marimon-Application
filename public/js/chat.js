@@ -49,7 +49,7 @@ $("#sendBtn").click(function(event) {
 		var pic = "images/" + num + ".png"
 		var htmlElement = '<div class = "chatbox" > ' +
   				'<div class="answer chat"> '+
-  					'<img src="images/Marimon face.png" style= "display:none"> ' +
+  					'<img src="images/Marimonface.png" style= "display:none"> ' +
        				'<span>' + input +' </span> ' +
        				'<img src=' + pic  + ' style="width:32px; height:32px"> ' +
        			'</div> ' +
@@ -59,7 +59,7 @@ $("#sendBtn").click(function(event) {
 		var numbness  = num.toString();
 
 $.post("/addMessage", {message:input, num:numbness} , function(data){
-console.log(data);
+console.log(data);  //** TA , INSTEAD of push or put we used post **//
 		} );
 
 		});  
