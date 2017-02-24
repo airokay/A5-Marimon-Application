@@ -18,6 +18,7 @@ exports.addMessage = function(req, res) {
 	var num = req.body.num;
 
 console.log(num);  //log message ehre
+
 	var newChat = {
 		message: message,
 		type: type,
