@@ -40,7 +40,7 @@ $("#sendBtn").click(function(event) {
 			num = 4;
 		} else if (pos==4){
 			num = 5;
-		}else if (pos == 5){
+		}else if (pos >= 5){
 			num = 6;
 		}
 		
