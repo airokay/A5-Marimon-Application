@@ -48,7 +48,7 @@ for(number; number<poswords.length; number++){
 		//twitter has 140 characters which is an average of 27 words.
 		//27 divided into 5 categorical ratings comes out 5.49 multiples.
 		// for now i will make it more sensitive in order to test
-		if (pos < 1){
+		if (pos <= 1){
 			num = 1
 		} else if (pos>1 && pos< 2){
 			num = 2
