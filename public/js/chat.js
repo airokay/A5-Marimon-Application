@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 });
 
-var chat = require('../chat.json');
+//var chat = require('../chat.json');
 
 var num  = 0;
 function initializePage() {
@@ -18,6 +18,10 @@ $("#sendBtn").click(function(event) {
 		var poswords = listofpositivewords.split(" ");
 		var numb = 0;
 		var pos = 0;
+
+		
+
+
 
 		//var words = listerine.toUpperCase();
 		for (numb; numb< words.length; numb++){
@@ -53,7 +57,14 @@ $("#sendBtn").click(function(event) {
        			'</div> ' +
   			'</div>'; 
 		$('#messagecontainer').append(htmlElement);
-		}); 
+
+		var numbness  = num.toString();
+
+$.post("/addMessage", {message:input, num:numbness} , function(data){
+console.log(data);
+		} );
+
+		});  
 }
 
 

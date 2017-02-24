@@ -4,26 +4,30 @@
  */
 
 var chat = require('../chat.json');
+
 exports.view = function(req, res){
   res.render('newEntry', chat);
 };
 
 
-exports.addChat = function(req, res) {
-	var message = req.query.message;
+exports.addMessage = function(req, res) {
+
+	var message = req.body.message;
 	var type = "answer";
 	var style = "display:none";
+	var num = req.body.num;
 
+console.log(num);  //log message ehre
 	var newChat = {
 		message: message,
 		type: type,
-		style: style
+		style: style,
+		num: num
 	};
 
 	chat.messages.push(newChat);
-	res.redirect('/');
-//  	res.json(chat);
-  //	res.render('newEntry', chat)
+//	res.redirect('/');
+
 }
 
 function projectClick(e){

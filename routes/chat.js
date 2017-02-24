@@ -17,3 +17,5 @@ exports.addChat = function(req, res) {
   	res.json(chat);
   	res.render('newEntry', chat)
 }
+
+
