@@ -2,6 +2,9 @@ $(document).ready(function(){
 	initializePage();
 	
 });
+
+var chat = require('../chat.json');
+
 var num  = 0;
 function initializePage() {
 	
@@ -14,50 +17,55 @@ $("#sendBtn").click(function(event) {
 		var listofpositivewords = list.toUpperCase();
 		var poswords = listofpositivewords.split(" ");
 		var numb = 0;
-
 		var pos = 0;
 
-		
 		//var words = listerine.toUpperCase();
 		for (numb; numb< words.length; numb++){
 			var number = 0;		
-for(number; number<poswords.length; number++){
-	
-
-
-			
-		
+			for(number; number<poswords.length; number++){
 				if (words[numb] ==  poswords[number]){
 					pos++;
-				} else{
+				} 
+				else{
 					pos;
 				}
-
-				
 			}
 		}
 
+/*	var message = req.query.typedMessage;
+	var type = "answer";
+	var icon = "file://null";
 
-		//var num = 1;
-	//	if(num == 5)
-	//		num = 0;
-	//	num = num +1;
+	var newChat = {
+		message: message,
+		type: type,
+		icon: icon
+	}
+
+	chat.messages.push(newChat);
+	res.redirect('/');
+  	res.json(chat);
+  	res.render('newEntry', chat); */
+
 
 
 
 		//twitter has 140 characters which is an average of 27 words.
 		//27 divided into 5 categorical ratings comes out 5.49 multiples.
 		// for now i will make it more sensitive in order to test
-		if (pos <= 1){
-			num = 1
-		} else if (pos>1 && pos< 2){
-			num = 2
-		} else if (pos>=2 && pos< 4){
-			num = 3
-		} else if (pos>=4 && pos<= 6){
-			num = 4
-		} else if (pos>6){
-			num = 5
+		if (pos == 1){
+			num = 1;
+		} else if (pos==2){
+			num = 2;
+		} else if (pos==3){
+			num = 3;
+		} else if (pos==4){
+			num = 4;
+		} else if (pos==5){
+			num = 5;
+		}
+		else{
+			num = 6;
 		}
 		
 		var pic = "images/" + num + ".png"
@@ -69,52 +77,7 @@ for(number; number<poswords.length; number++){
        			'</div> ' +
   			'</div>'; 
 		$('#messagecontainer').append(htmlElement);
-		//$('#messagecontainer').append(" pos:" + pos + " length:" + poswords[2] + words[2] + numb + number);
-	});
+		}); 
 }
 
 
-
-/*var chat = require('../chat.json');
-
-exports.addChat = function(req, res) {
-	var message = req.query.message;
-	var type = "answer";
-	var style = "display:none";
-
-	var newChat = {
-		message: message,
-		type: type,
-		style: style
-	}
-
-	chat.messages.push(newChat);
-	res.redirect('/');
-//  	res.json(chat);
-  //	res.render('newEntry', chat)
-}
-
-function initializePage() {
-	$('#sendBtn').click(sendMessage);
-	console.log("User clicked on button");
-}
-
-function sendMessage(e){
-	e.preventDefault();
-
-	var message = document.getElementbyId('#inputmessage').value;
-	var type = "answer";
-	var style = "display:none";
-
-	var newChat = {
-		message: message,
-		type: type,
-		style: style
-	}
-
-	chat.messages.push(newChat);
-	res.redirect('/');
-  	res.json(chat);
- 	res.render('newEntry', chat)
-
-} */
