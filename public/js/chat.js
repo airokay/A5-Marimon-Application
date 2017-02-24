@@ -52,9 +52,9 @@ for(number; number<poswords.length; number++){
 			num = 1
 		} else if (pos>1 && pos< 2){
 			num = 2
-		} else if (pos>2 && pos< 4){
+		} else if (pos>=2 && pos< 4){
 			num = 3
-		} else if (pos>4 && pos< 6){
+		} else if (pos>=4 && pos<= 6){
 			num = 4
 		} else if (pos>6){
 			num = 5
