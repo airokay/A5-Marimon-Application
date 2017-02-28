@@ -14,6 +14,8 @@
 	
 	<body style="background-color:#E6F3CA" >
 
+	
+
 		<div class="container">
 			<div style = "position:center" >
 				<a href="/index">
@@ -46,16 +48,15 @@
   			{{#each messages}}
   			<div class = "chatbox" >
   				<div class="{{type}} chat">
-  					<img src="images/{{num}}.png" style= {{style}}>
-       				<span> {{message}} </span>
+  					<img src="images/{{num}}.png" >
+       				<span> {{message}} </span> 
        				<!-- <img src="{{marimon}}" class = "img-responsive col-sm-12"> -->
        			</div>
   			</div>
   			{{/each}}
   			</div>
 
-
-
+ 
 
 
 		<!--	<div>
@@ -66,7 +67,7 @@
 
 
 			<div class="entry">
-				<button id="sendBtn" href= "#" class="btn" type="button"style="float:right" >Send</button>
+				<button id="sendBtn" href= "#" class="btn" type="button" style="float:right" >Send</button>
 				<div style="overflow: hidden; padding-right: .5em;">
    					<input id="inputMessage" type="text" class="form-control" name="typedMessage" placeholder="Type your entry..."/>
 				</div>​
