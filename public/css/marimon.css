@@ -74,6 +74,7 @@
 }
 
 .entry{
+	float;
 	position: absolute;
 	bottom: 0px;
 	min-width: 80%;
