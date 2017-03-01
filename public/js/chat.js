@@ -13,14 +13,14 @@ var k = 0;
 function initializePage() {
 
 	$("#messagecontainer").animate({ scrollTop: '100000000' }, "slow");
+	$("#inputMessage").keyup(function(event){
+    	if(event.keyCode == 13){
+
+        	$("#sendBtn").click();
+        }
+    });
 $("#sendBtn").click(function(event) {
 		event.preventDefault();
-
-		
-
-		
-
-		
 		var input = $('#inputMessage').val();
 		var listy = input.toUpperCase();
 		var words = listy.split(" ");
@@ -31,7 +31,6 @@ $("#sendBtn").click(function(event) {
 		var poswords = listofpositivewords.split(" ");
 		var numb = 0;
 		var pos = 0;
-
 
 		picarray.push(pic);
 
@@ -46,19 +45,6 @@ $("#sendBtn").click(function(event) {
 			
 		}
 
-
-		
-
-
-
-
-
-
-
-
-		
-
-
 		if (pos == 0){
 			num = 1;
 		} else if (pos==1){
@@ -71,15 +57,13 @@ $("#sendBtn").click(function(event) {
 			num = 5;
 		}
 		
-		
-		
-		
 		//var picarray.length-1
 		//var picarray[]
 		
 		if (k>0){
 		$('#messagecontainer img').last().remove();
 		$('#messagecontainer').append(picarray[picarray.length-1] + ">");
+		$('chatbox:last').before('<li>New item</li>');
 		}k++
 		pic = "<img src=images/" + num + ".png"
 
@@ -94,9 +78,6 @@ $("#sendBtn").click(function(event) {
 
 
 		$('#messagecontainer').append(htmlElement);
-
-		
-
 
 		var numbness  = num.toString();
 

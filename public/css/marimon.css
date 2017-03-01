@@ -67,9 +67,8 @@
 	position: absolute;
 	right: 20px;
 	bottom: 60px;
-	    padding: 4px;
-   
-    border: 4px;
+	padding: 4px;
+  border: 4px;
    
 }
 
@@ -78,11 +77,19 @@
 	position: absolute;
 	bottom: 0px;
 	min-width: 80%;
-	    padding: 4px;
-   
-    border: 4px;
+	padding: 4px;
+  border: 4px;
    
 }
+
+.info{
+  overflow: auto;
+  margin: all;
+  height: 80%;
+  min-width: 100%;
+}
+
+
 
 .bubble {
     position: relative;
@@ -122,20 +129,13 @@
 }
 
 #breathingMarimon {
-
-   width: 40px;
-    padding: 4px;
-   
-    border: 4px;
-   
+  width: 40px;
+  padding: 4px; 
+  border: 4px;
+  animation: breathing 8s ease-out infinite normal;
+  border-radius: 3px;
+  text-align: center;  
     
-    animation: breathing 8s ease-out infinite normal;
-        border-radius: 3px;
-    text-align: center;  
-    
-
-
-       
     }
 
 
