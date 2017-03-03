@@ -27,6 +27,23 @@ exports.addMessage = function(req, res) {
 	chat.messages.push(newChat);
 }
 
+exports.addQuestion = function(req, res) {
+
+	var message = req.body.message;
+	var type = "question";
+	var style = "display:none";
+	var num = "3";
+
+	var newChat = {
+		message: message,
+		type: type,
+		style: style,
+		num: num
+	};
+
+	chat.messages.push(newChat);
+}
+
 function projectClick(e){
 	e.preventDefault();
 } 

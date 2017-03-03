@@ -19,6 +19,29 @@ function initializePage() {
         	$("#sendBtn").click();
         }
     });
+
+
+	$("#addQuestion").click(function(event) {
+
+		var input = "RANDOM QUESTION"
+
+		var htmlElement = '<div class = "chatbox" > ' +
+  				'<div class="question chat"><span>' + input +' </span> ' +
+       				'<div id="breathingMarimon">' + "<img src=images/3.png" +'  name="saveForm" class="btTxt submit" id="saveForm" /></div> ' +
+       			'</div> ' +
+  			'</div>'; 
+  			var element = document.getElementById("messagecontainer");
+			$("#messagecontainer").animate({ scrollTop: '1000000000' }, "slow");
+
+		$('#messagecontainer').append(htmlElement);
+
+	$.post("/addQuestion", {message:"RANDOM QUESTION"} , function(data){
+			console.log(data);  //** TA , INSTEAD of push or put we used post **//
+		} );
+});
+
+
+
 $("#sendBtn").click(function(event) {
 		event.preventDefault();
 		var input = $('#inputMessage').val();

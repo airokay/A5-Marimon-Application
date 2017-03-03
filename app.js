@@ -60,6 +60,7 @@ app.get('/pastEntry2', pastEntry2.view);
 app.get('/information', information.view);
 
 app.post('/addMessage', newEntry.addMessage);
+app.post('/addQuestion', newEntry.addQuestion);
 
 // Example route
 // app.get('/users', user.list);
