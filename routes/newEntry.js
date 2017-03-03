@@ -17,8 +17,6 @@ exports.addMessage = function(req, res) {
 	var style = "display:none";
 	var num = req.body.num;
 
-console.log(num);  //log message ehre
-
 	var newChat = {
 		message: message,
 		type: type,
@@ -27,8 +25,6 @@ console.log(num);  //log message ehre
 	};
 
 	chat.messages.push(newChat);
-//	res.redirect('/');
-
 }
 
 function projectClick(e){
