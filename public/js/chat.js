@@ -21,9 +21,31 @@ function initializePage() {
     });
 
 
-	$("#addQuestion").click(function(event) {
+$("#addQuestion").click(function(event) {
+	//	var questionList = JSON.parse(qlist);
+		var arry = ["How is your family?",
+					"How were your meals?",
+					"Did you accomplish anything?",
+					"What did you dream of?",
+					"Did you exercise today?",
+					"Are you in good health today?",
+					"What worked really well today?",
+					"Did you reach your goal today?",
+					"Do you have any good news to celebrate with me?",
+					"Do you have any questions for me?",
+					"Do you like chicken?",
+					"YOLO?",
+					"What are a few things you can live up to today?",
+					"What are your plans?",
+					"Did anything interesting happen?",
+					"What did you improve on today?",
+					"How is your health?",
+					"Find a true love?",
+					"How hard was your homework?" ];
 
-		var input = "RANDOM QUESTION"
+		var rand = Math.floor(Math.random() * (18 - 0 + 1)) + 0;
+
+		var input = arry[rand];
 
 		var htmlElement = '<div class = "chatbox" > ' +
   				'<div class="question chat"><span>' + input +' </span> ' +
@@ -35,7 +57,7 @@ function initializePage() {
 
 		$('#messagecontainer').append(htmlElement);
 
-	$.post("/addQuestion", {message:"RANDOM QUESTION"} , function(data){
+		$.post("/addQuestion", {message:input} , function(data){
 			console.log(data);  //** TA , INSTEAD of push or put we used post **//
 		} );
 });
