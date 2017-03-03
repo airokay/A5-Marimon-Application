@@ -49,11 +49,12 @@ $("#addQuestion").click(function(event) {
 
 		var htmlElement = '<div class = "chatbox" > ' +
   				'<div class="question chat"><span>' + input +' </span> ' +
-       				'<div id="breathingMarimon">' + "<img src=images/3.png" +'  name="saveForm" class="btTxt submit" id="saveForm" /></div> ' +
+       				'<div id="yolo">' + "<img src=images/3.png" +'  name="saveForm" class="btTxt submit" id="saveForm" /></div> ' +
        			'</div> ' +
   			'</div>'; 
-  			var element = document.getElementById("messagecontainer");
-			$("#messagecontainer").animate({ scrollTop: '1000000000' }, "slow");
+
+  			//var element = document.getElementById("messagecontainer");
+			//$("#messagecontainer").animate({ scrollTop: '1000000000' }, "slow");
 
 		$('#messagecontainer').append(htmlElement);
 
