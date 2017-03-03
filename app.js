@@ -18,6 +18,7 @@ var chat = require('./routes/chat');
 var pastEntry1 = require('./routes/pastEntry1');
 var pastEntry2 = require('./routes/pastEntry2');
 var information = require('./routes/information');
+var designb = require('./routes/designb');
 
 
 
@@ -58,9 +59,12 @@ app.get('/chat', chat.addChat);
 app.get('/pastEntry1', pastEntry1.view);
 app.get('/pastEntry2', pastEntry2.view);
 app.get('/information', information.view);
+app.get('/designb', designb.view);
 
 app.post('/addMessage', newEntry.addMessage);
 app.post('/addQuestion', newEntry.addQuestion);
+
+
 
 // Example route
 // app.get('/users', user.list);
