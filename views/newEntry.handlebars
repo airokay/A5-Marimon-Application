@@ -14,8 +14,6 @@
 	
 	<body style="background-color:#E6F3CA" >
 
-	
-
 		<div class="container">
 			<div style = "position:center" >
 				<a href="/index">
@@ -35,40 +33,21 @@
 				</span>
 			</div>
 
-			<div id = "addQuestion" class="question">
-					<img src="images/question.png" style = "position: absolute; right: 80px; bottom: 90px; max-width: 80px; max-height:80px;">
-			</div>
-		
-
-<!--       		<div class="chat">
-       			<img src="images/Marimon face.png" style="width:80px; height:80px">
-       			<span > How are you feeling today? </span>
-       		</div>
-
-       		<div class="chat answer">
-       			<span> I'm feeling great</span>
-       		</div> -->
-
        		<div id = "messagecontainer">
   			{{#each messages}}
   			<div class = "chatbox" >
   				<div class="{{type}} chat">
   					<img src="images/{{num}}.png">
-       					<span> {{message}} </span>
-       				<!-- <img src="{{marimon}}" class = "img-responsive col-sm-12"> -->
+       				<span> {{message}} </span>
        			</div>
   			</div>
   			{{/each}}
   			</div>
 
- 
 
-
-		<!--	<div>
-				<a href = "/question">
-					<img src = "images/Plus.png" class="plus-entry">
-				</a>
-			</div>   --> 
+  			<div id = "addQuestion" class="question">
+				<img src="images/question.png" style = "position: absolute; right: 16px; bottom: 16px; max-width: 60px; max-height:60px;">
+			</div>
 
 
 			<div class="entry">

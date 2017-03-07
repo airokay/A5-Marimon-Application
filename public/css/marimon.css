@@ -1,18 +1,20 @@
 #messagecontainer{
   overflow: auto;
   margin: all;
-  height: 80%;
+  height: 82%;
   min-width: 100%;
 }
 
 
-/*.answer{
-  float: right;
-  padding-right: 44px;
-} */
-
 .answer span {
   float: right;
+  margin-left: 70px;
+  margin-top:20px;
+  text-align: right;
+  padding-right:20px;
+}
+
+.question span {
   margin-left: 70px;
   margin-top:50px;
   text-align: right;
@@ -27,7 +29,7 @@
 
 
 .chatbox{
-  padding-bottom: 4cm;
+  padding-bottom: 12px;
 }
 
 .hamburger{
