@@ -1,8 +1,13 @@
+.marimon{
+	font-family: 'Chewy', cursive;
+}
+
 #messagecontainer{
   overflow: auto;
   margin: all;
   height: 82%;
   min-width: 100%;
+  padding-bottom: 15%;
 }
 
 
@@ -65,14 +70,20 @@
 }
 
 .entry{
-  float;
+  float: left;
   position: absolute;
   bottom: 0px;
-  min-width: 80%;
+  min-width: 65%;
   padding: 4px;
   border: 4px;
    
 }
+
+
+.addQuestion {
+position: right;
+}
+
 
 .info{
   overflow: auto;
@@ -93,9 +104,10 @@
   border: 4px;
   animation: breathing 8s ease-out infinite normal;
   border-radius: 3px;
-  text-align: center;  
-    
-    }
+  text-align: center;
+}
+
+
 
 
 @-webkit-keyframes breathing {

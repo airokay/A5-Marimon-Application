@@ -21,7 +21,7 @@ function initializePage() {
     });
 
 
-$("#addQuestion").click(function(event) {
+$("#me").click(function(event) {
 	//	var questionList = JSON.parse(qlist);
 		var arry = ["How is your family?",
 					"How were your meals?",
