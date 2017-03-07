@@ -6,11 +6,11 @@
 var chat = require('../chat.json');
 
 exports.view = function(req, res){
-  res.render('designb', chat);
+  res.render('newEntry', chat);
 };
 
 
-exports.addMessageb = function(req, res) {
+exports.addMessage = function(req, res) {
 
 	var message = req.body.message;
 	var type = "answer";
@@ -27,7 +27,7 @@ exports.addMessageb = function(req, res) {
 	chat.messages.push(newChat);
 }
 
-exports.addQuestionb = function(req, res) {
+exports.addQuestion = function(req, res) {
 
 	var message = req.body.message;
 	var type = "question";

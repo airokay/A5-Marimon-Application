@@ -63,6 +63,8 @@ app.get('/designb', designb.view);
 
 app.post('/addMessage', newEntry.addMessage);
 app.post('/addQuestion', newEntry.addQuestion);
+//app.post('/addMessageb', designb.addMessage);
+//app.post('/addQuestionb', designb.addQuestion);
 
 
 
