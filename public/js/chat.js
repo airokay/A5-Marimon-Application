@@ -3,6 +3,7 @@ $(document).ready(function(){
 	
 });
 
+
 //var chat = require('../chat.json');
 
 var num;
@@ -22,6 +23,7 @@ function initializePage() {
 
 
 $("#me").click(function(event) {
+	ga('send', 'event', 'question', 'click');
 	//	var questionList = JSON.parse(qlist);
 		var arry = ["How is your family?",
 					"How were your meals?",
@@ -69,6 +71,7 @@ $("#me").click(function(event) {
 
 
 $("#sendBtn").click(function(event) {
+		ga('send', 'event', 'send', 'click');
 		event.preventDefault();
 		var input = $('#inputMessage').val();
 		var listy = input.toUpperCase();
