@@ -5,9 +5,17 @@
 
 var chat = require('../chat.json');
 
-exports.view = function(req, res){
+exports.viewMin = function(req, res){
+	chat["min"] = true;
   res.render('newEntry', chat);
 };
+
+exports.view = function(req, res){
+	chat["min"] = false;
+  res.render('newEntry', chat);
+};
+
+
 
 
 exports.addMessage = function(req, res) {
