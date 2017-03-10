@@ -22,6 +22,8 @@ function initializePage() {
     });
 
 
+
+
 $("#me").click(function(event) {
 	ga('send', 'event', 'question', 'click');
 	//	var questionList = JSON.parse(qlist);
@@ -153,6 +155,9 @@ $("#sendBtn").click(function(event) {
 $.post("/addMessage", {message:input, num:numbness} , function(data){
 console.log(data);  //** TA , INSTEAD of push or put we used post **//
 		} );
+
+$('#inputMessage').val('');
+
 
 		}); 
 		 picarray.push(pic);
