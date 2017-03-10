@@ -6,12 +6,12 @@
 var chat = require('../chat.json');
 
 exports.viewMin = function(req, res){
-	chat["min"] = true;
+	chat["page_B"] = true;
   res.render('page_A', chat);
 };
 
 exports.view = function(req, res){
-	chat["min"] = false;
+	chat["page_B"] = false;
   res.render('page_A', chat);
 };
 

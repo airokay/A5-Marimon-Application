@@ -61,7 +61,7 @@ app.get('/pastEntry2', pastEntry2.view);
 app.get('/information', information.view);
 app.get('/designb', designb.view);
 
-app.get('/min', page_A.viewMin);
+app.get('/page_B', page_A.viewMin);
 
 app.post('/addMessage', page_A.addMessage);
 app.post('/addQuestion', page_A.addQuestion);
