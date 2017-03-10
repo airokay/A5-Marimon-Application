@@ -7,12 +7,12 @@ var chat = require('../chat.json');
 
 exports.viewMin = function(req, res){
 	chat["min"] = true;
-  res.render('newEntry', chat);
+  res.render('page_A', chat);
 };
 
 exports.view = function(req, res){
 	chat["min"] = false;
-  res.render('newEntry', chat);
+  res.render('page_A', chat);
 };
 
 
@@ -73,5 +73,5 @@ function sendMessage(e){
 	chat.messages.push(newChat);
 	res.redirect('/');
   	res.json(chat);
- 	res.render('newEntry', chat);
+ 	res.render('page_A', chat);
 } 

@@ -10,7 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var menu = require('./routes/menu');
-var newEntry = require('./routes/newEntry');
+var page_A = require('./routes/page_A');
 var setting = require('./routes/setting');
 var question = require('./routes/question');
 var login = require('./routes/login');
@@ -51,7 +51,7 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/menu', menu.view);
-app.get('/newEntry', newEntry.view);
+app.get('/page_A', page_A.view);
 app.get('/settings', setting.view);
 app.get('/question', question.view);
 app.get('/login', login.view);
@@ -61,10 +61,10 @@ app.get('/pastEntry2', pastEntry2.view);
 app.get('/information', information.view);
 app.get('/designb', designb.view);
 
-app.get('/min', newEntry.viewMin);
+app.get('/min', page_A.viewMin);
 
-app.post('/addMessage', newEntry.addMessage);
-app.post('/addQuestion', newEntry.addQuestion);
+app.post('/addMessage', page_A.addMessage);
+app.post('/addQuestion', page_A.addQuestion);
 //app.post('/addMessageb', designb.addMessage);
 //app.post('/addQuestionb', designb.addQuestion);
 
