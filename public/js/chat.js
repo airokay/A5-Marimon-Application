@@ -149,6 +149,9 @@ $("#sendBtn").click(function(event) {
 			var todo = todoarray[rando];
 			//$('#messagecontainer').append("todo[rando]");
 			$('#messagecontainer').append("I'll help you decide:" + todo);
+			$.post("/addQuestion", {message:"I'll help you decide:" + todo} , function(data){
+			console.log(data);  //** TA , INSTEAD of push or put we used post **//
+		} );
 			//$('#messagecontainer').append(picarray[picarray.length-1] + ">");			
 		}
 
