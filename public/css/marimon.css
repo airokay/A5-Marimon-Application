@@ -1,4 +1,4 @@
-.marimon{
+.chewy{
 	font-family: 'Chewy', cursive;
 }
 
@@ -55,10 +55,10 @@
   padding:20px;
 }
 
-.date {
-  width: 100%;
-  text-align: center;
+.date{
   font-size: 20px;
+  margin: auto;
+  padding-left: 20px;
 }
 
 .record{
@@ -145,13 +145,13 @@ position: right;
   }
 }
 
-.clear {clear: both}
+
 .answer span {
   position:relative;
   padding:10px 20px;
   color:white; 
   background:orange;
-  border-radius:25px;
+  border-radius:15px;
   float: right;
     
   &:before {
@@ -183,7 +183,7 @@ position: right;
   position:relative;
   padding:10px 20px;
   background:#E5E5EA;
-  border-radius:25px;
+  border-radius:15px;
   color: black;
  
     
