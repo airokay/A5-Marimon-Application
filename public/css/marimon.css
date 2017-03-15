@@ -149,8 +149,8 @@ position: right;
 .answer span {
   position:relative;
   padding:10px 20px;
-  color:black; 
-  background:#C2C3C4;
+  color:white; 
+  background:orange;
   border-radius:25px;
   float: right;
     
@@ -161,7 +161,7 @@ position: right;
     bottom:-2px;
     right:-7px;
     height:20px;
-    border-right:20px solid #C2C3C4;
+    border-right:20px solid orange;
     border-bottom-left-radius: 16px 14px;
     -webkit-transform:translate(0, -2px);
   }
@@ -212,5 +212,7 @@ position: right;
     -webkit-transform:translate(-30px, -2px);
   }
 }
+
+
 
 
