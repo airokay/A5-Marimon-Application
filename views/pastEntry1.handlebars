@@ -29,9 +29,20 @@
 						<li><a href="/newEntry"> Delete </a></li>
 						<li><a href="/login"> Logout </a></li>
 					</ul>
-				</div>
+				</span>
 			</div>
-		
+
+			 <div id = "messagecontainer">
+  			{{#each messages}}
+  			<div class = "chatbox" >
+  				<div class="{{type}} chat">
+  					<img src="images/{{num}}.png">
+       				<span> {{message}} </span>
+       			</div>
+  			</div>
+  			{{/each}}
+  			</div>
+<!---
 
 
        		<div id = "messagecontainer">
@@ -46,6 +57,8 @@
        				</div>
   				</div>
   			</div>
+
+  			--->
 		</div> <!-- containers -->
 
 		<script src="https://code.jquery.com/jquery.js"></script>
