@@ -157,9 +157,11 @@ $("#sendBtn").click(function(event) {
 $.post("/addMessage", {message:input, num:numbness} , function(data){
 console.log(data);  //** TA , INSTEAD of push or put we used post **//
 		} );
+if( todo != null){
 $.post("/addQuestion", {message:"I'll help you decide:" + todo} , function(data){
 			console.log(data);  //** TA , INSTEAD of push or put we used post **//
 		} );
+}
 
 $('#inputMessage').val('');
 
