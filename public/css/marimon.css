@@ -60,7 +60,7 @@
 }
 
 .logincontainer{
-  height: center;
+  padding-top: 20%;
 }
 
 
@@ -162,6 +162,7 @@ position: right;
   background:orange;
   border-radius:15px;
   float: right;
+  max-width: 50%;
     
   &:before {
     content:"";
@@ -194,6 +195,7 @@ position: right;
   background:#E5E5EA;
   border-radius:15px;
   color: black;
+  max-width: 50%;
  
     
   &:before {

@@ -148,15 +148,17 @@ $("#sendBtn").click(function(event) {
 			todoarray[0] = todoarray[0].substring(5);
 			var todo = todoarray[rando];
 			//$('#messagecontainer').append("todo[rando]");
-			$('#messagecontainer').append("I'll help you decide:" + todo);
-			$.post("/addQuestion", {message:"I'll help you decide:" + todo} , function(data){
-			console.log(data);  //** TA , INSTEAD of push or put we used post **//
-		} );
+			var appendicitis =  '<div class="question chat"><div style = "padding-left:40px"><span>' + "I'll help you decide:" + todo +  '</span></div></div></div>';
+			$('#messagecontainer').append(appendicitis);
+			
 			//$('#messagecontainer').append(picarray[picarray.length-1] + ">");			
 		}
 
 $.post("/addMessage", {message:input, num:numbness} , function(data){
 console.log(data);  //** TA , INSTEAD of push or put we used post **//
+		} );
+$.post("/addQuestion", {message:"I'll help you decide:" + todo} , function(data){
+			console.log(data);  //** TA , INSTEAD of push or put we used post **//
 		} );
 
 $('#inputMessage').val('');
